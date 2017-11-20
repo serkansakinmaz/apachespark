@@ -18,7 +18,7 @@ import scala.Tuple2;
 
 public class AnomalyApp {
 
-	public static final String kddDataPath = "C:\\Users\\serkans\\Desktop\\data\\kddcup.data_10_percent";
+	public static final String kddDataPath = "C:\\Users\\serkans\\Desktop\\data\\kddcup.data_10_percent\\*";
 
 	public static void main(String[] args) {
 
@@ -107,7 +107,7 @@ public class AnomalyApp {
 		
 		// Print top ten points
 		for (Tuple2<Double, Vector> tuple : result) {
-			System.out.println("Distance " + tuple._1());
+			System.out.println("Anomaly data" + tuple._2());
 		}
 
 	}
